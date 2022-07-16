@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZyraBOT - Komutlar</title>
+    <link rel="stylesheet" href="src/css/komutlar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/icon" href="./img/favicon.ico"/>
+</head>
+
+<body>
+
+    
+    <header>
+        <h1 class="logo">ZyraBOT</h1>
+        <nav>
+            <ul class="nav-area top-nav">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="https://top.gg/bot/798982229740748800/vote">oy ver</a></li>
+            </ul>
+        </nav>
+        <a href="https://discord.com/oauth2/authorize?client_id=798982229740748800&scope=bot&permissions=535866487" class="btn-area">Davet Et</a>
+    </header>
+   
+  
+    <div class="wrapper">
+        <div class="home" id="home">
+            <div class="home-text">
+                <h1 id="botname">ZyraBOT İle Herzaman İleriye</h1>
+                <h3 style="margin-left: 0;">Gelişmiş Moderasyon Botu Olan ZyraBOT ile Suncunuz güvende!</h3>
+                <p class="bot-description">ZyraBOT`u Sunucuya Ekleme Zamanı!</p>
+                
+    <a href="https://discord.com/oauth2/authorize?client_id=798982229740748800&scope=bot&permissions=535866487" class="home-btn">Sunucuya Ekle</a>
+            </div>
+            <div class="home-img">
+                <img src="zyra_pp.png"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    
+    <div class="features">
+        <div class="curve">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill-opacity="1" id="features"
+                    d="M0,128L48,149.3C96,171,192,213,288,229.3C384,245,480,235,576,202.7C672,171,768,117,864,96C960,75,1056,85,1152,106.7C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+        <div class="wrapper reveal">
+            <div class="title">
+                <div class="th1">
+                    <h1>Destek Sistemi Hakkında</h1>
+                </div>
+                <center>
+                    <div class="thr">
+                        <hr>
+                    </div>
+                </center>
+            </div>
+          
+            <div class="features-grid">
+                <div class="feature feature1">
+                    <i class="fas fa-clipboard-list"></i>
+                    <h4>Sorun bildirme</h4>
+                    <p>ZyraBOT`ta veya komutlarında bir sorun farkeder/görürseniz Lütfen önce z!bug-bildir komutu ile bildirin</p>
+
+                </div>
+              
+                <div class="feature feature2">
+                    <i class="fas fa-server"></i>
+                    <h4>Yardım Aldım Ama Sorunum Çözülmedi</h4>
+                    <p>Bunu Lütfen Geliştiriciye bildiriniz.Hangi destek ekibi üyesinden yardım aldığınızı yazmayı unutmayın,botu sunucudan atıp tekrar davet etmeyi deneyebilirsiniz</p>
+
+                </div>
+                
+                <div class="feature feature3">
+                    <i class="fab fa-angellist"></i>
+                    <h4>Bende Destek Ekibine Katılabilirmiyim</h4>
+                    <p>14 yaşından büyük Herkes Destek Ekibine Katılabilir Ses Teyit Alınacağını unutmayın</p>
+                    <h4>Destek Sunucusuna KATIL! <a href="https://github.com/DiscordWasMyIdea/Discord-bot-website-template/">TIKLA</a></h4>
+                </div>
+               
+            </div>
+        </div>
+        <div class="curved">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill-opacity="1" id="commands"
+                    d="M0,224L48,229.3C96,235,192,245,288,218.7C384,192,480,128,576,133.3C672,139,768,213,864,229.3C960,245,1056,203,1152,186.7C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="feature feature2">
+        <i class="fas fa-cancel"></i>
+        <h4>Talimatları Uyguladım Ama Bot yapmıyor</h4>
+        <p>Botun İzinlerini Kontrol Ediniz Ve Botun Rolünü @ZyraBOT En Üste Çekiniz</p>
+        <h4>NOT:  (sıfırlama komutlarını kullanırsanız tekrar ( kanal vs) belirtmelisiniz) Sıfırlama Kapatır.</h4>
+    </div>
+    
+    
+    <div class="wrapper reveal">
+        <div class="title">
+            <div class="th1">
+                <h1>Komutlar</h1>
+            </div>
+            <center>
+                <div class="thr">
+                    <hr>
+                </div>
+            </center>
+        </div>
+        
+        <nav>
+            <div class=" categorys">
+                <span class="category active" data-name="all">Tüm Komutlar</span>
+                <span class="category" data-name="kayıt">Kayıt Sistemi</span>
+                <span class="category" data-name="özelk">Özel Kanal Sistemi</span>
+                <span class="category" data-name="tag">Tag Sistemi</span>
+                <span class="category" data-name="mod">Moderasyon</span>
+                <span class="category" data-name="kelimeo">Kelime Oyunu</span>
+                <!-- <span class="category" data-name="premium">Premium</span> -->
+            </div>
+        </nav>
+        
+        <div class="commands">
+           
+            <div class="command" data-name="mod">
+                <h2>Ban</h2><span>
+                    <div class="cmdinfo">
+                        <p>Etiketlediğiniz Üyeyi Sunucudan Banlarsıznız</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!ban @üye</p>
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="mod">
+                <h2>banlog</h2><span>
+                    <div class="cmdinfo">
+                        <p>Banlogu Ayarlarsınız ( Bildirim Kanalı)</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!ban-log #kanal</p>
+                    </div>
+                </span>
+            </div>
+
+
+
+            <div class="command" data-name="mod">
+                <h2>unban</h2><span>
+                    <div class="cmdinfo">
+                        <p>Banlanan Kullanıcının Banını Açarsınız</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!unban İD</p>
+                    </div>
+                </span>
+            </div>
+          
+          
+            <div class="command" data-name="mod">
+                <h2>sil</h2><span>
+                    <div class="cmdinfo">
+                        <p>Belirttiğiniz Miktarda Mesaj siler</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!sil 0-100</p>
+                    </div>
+                </span>
+            </div>
+            
+            <div class="command" data-name="mod">
+                <h2>kick</h2><span>
+                    <div class="cmdinfo">
+                        <p>Belirttiğiniz Üyeyi Sunucudan Atar</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!kick @üye </p>
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="mod">
+                <h2>duyuru</h2><span>
+                    <div class="cmdinfo">
+                        <p>Bota Duyuru Yaptırırsınız</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!duyuru [duyurunuz] </p>
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="mod">
+                <h2>küfür</h2><span>
+                    <div class="cmdinfo">
+                        <p>Bot Küfürlü Mesajları Siler</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!küfür engel-aktif - z!küfür engel-deaktif </p>
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="mod">
+                <h2>Reklam</h2><span>
+                    <div class="cmdinfo">
+                        <p>Kullanıcıların Reklam Yapmasını Engeller</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!reklam aç - z!reklam kapat </p>
+                    </div>
+                </span>
+            </div>
+
+
+            <div class="command" data-name="mod">
+                <h2>slowmode</h2><span>
+                    <div class="cmdinfo">
+                        <p>Yavaş Modu Ayarlarsınız</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!yavaşmod [0/21600]</p>
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="mod">
+                <h2>sa-as</h2><span>
+                    <div class="cmdinfo">
+                        <p> Bot Sa Diyene As Der.</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!sa-as aç - kapat </p>
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="mod">
+                <h2>çekiliş</h2><span>
+                    <div class="cmdinfo">
+                        <p>Çekiliş Başlatırsınız</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!çekiliş => Talimatları izleyiniz </p>
+                    </div>
+                </span>
+            </div>
+
+            
+            <div class="command" data-name="mod">
+                <h2>rol-ver</h2><span>
+                    <div class="cmdinfo">
+                        <p>Etiketlediğiniz Kullanıcıya Etiketlediğiniz Rolü Verir</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!rolver @üye @rol</p>
+                    </div>
+                </span>
+            </div>
+
+
+            <div class="command" data-name="mod">
+                <h2>oylama</h2><span>
+                    <div class="cmdinfo">
+                        <p>Bir Oylama Başlatırsınız </p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!oylama ZyraBOT iyimi</p>
+                    </div>
+                </span>
+            </div>
+
+
+            <div class="command" data-name="mod">
+                <h2>oylama</h2><span>
+                    <div class="cmdinfo">
+                        <p>Bir Oylama Başlatırsınız </p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!oylama ZyraBOT iyimi</p>
+                     
+                    </div>
+                </span>
+            </div>
+
+            
+            <div class="command" data-name="mod">
+                <h2>emojiekle</h2><span>
+                    <div class="cmdinfo">
+                        <p>Yazdığınız Linki Emoji Ekler</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!emojiekle link isim</p>
+                     
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="mod">
+                <h2>kilitle</h2><span>
+                    <div class="cmdinfo">
+                        <p>Komutu Yazdığınız Kanalı Kilitler;Üyeler Mesaj Atamaz.</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!kilitle</p>
+                     
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="mod">
+                <h2>kanalkilitaç</h2><span>
+                    <div class="cmdinfo">
+                        <p>Kilitlenen Kanalın Kilidini Açar;Üyeler Mesaj atabilir.</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!kanalkilitaç</p>
+                     
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="mod">
+                <h2>mute</h2><span>
+                    <div class="cmdinfo">
+                        <p>Etiketlediğiniz Kullanıcıyı Susturur.</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!mute @üye</p>
+                     
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="mod">
+                <h2>unmute</h2><span>
+                    <div class="cmdinfo">
+                        <p>Etiketlediğiniz Kullanıcıyı Susturmasını Kaldırır.</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!unmute @üye</p>
+                     
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="mod">
+                <h2>kural</h2><span>
+                    <div class="cmdinfo">
+                        <p>Yazdığınız Kanala Bot Otomatik Kural Ekler.</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!kural</p>
+                     
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="mod">
+                <h2>capsengel aç</h2><span>
+                    <div class="cmdinfo">
+                        <p>Bir Mesajdaki Büyük Harf Oranı Eğer Mesajın 50% Sinden Daha Fazla İse Mesaj Silinecektir.</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: capsengel aç</p>
+                     
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="mod">
+                <h2>rol-renk</h2><span>
+                    <div class="cmdinfo">
+                        <p>Etiketlediğiniz Rolün Rengini Değiştirirsiniz</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!rol-renk @rol beyaz</p>
+                     
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="mod">
+                <h2>ever-here-engel </h2><span>
+                    <div class="cmdinfo">
+                        <p>Yetkili Kişiler Hariç @everyone ve @here Etiketlerinin Siler</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!ever-here-engel aç/kapat</p>
+                     
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="mod">
+                <h2>otorol-ayarla </h2><span>
+                    <div class="cmdinfo">
+                        <p>Bot Sunucuya Giren Üylere Belirtilen Rolü Verir</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!otorol-ayarla @rol #kanal</p>
+                     
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="mod">
+                <h2>otorol-sıfırla </h2><span>
+                    <div class="cmdinfo">
+                        <p>Ayarlanan Otorolü Sıfırlar</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!otorol-sıfırla</p>
+                     
+                    </div>
+                </span>
+            </div>
+
+
+            <div class="command" data-name="mod">
+                <h2>sayaç-ayarla </h2><span>
+                    <div class="cmdinfo">
+                        <p>Sayaç Hedefi Belirlersiniz</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!sayaç-ayarla 100 => [İstediğiniz Sayı] </p>
+                     
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="mod">
+                <h2>sayaç-kanal-ayarla </h2><span>
+                    <div class="cmdinfo">
+                        <p>Sayaç Bildirimini Ayarlarsınız</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!sayaç-kanal-ayarla #kanal </p>
+                     
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="mod">
+                <h2>sayaç kapat </h2><span>
+                    <div class="cmdinfo">
+                        <p>Sayaç Sistemi kapatılır</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!sayaç kapat</p>
+                     
+                    </div>
+                </span>
+            </div>
+         
+
+            <div class="command" data-name="mod">
+                <h2>nuke</h2><span>
+                    <div class="cmdinfo">
+                        <p>Bulunduğunuz ( komutu yazdığınız) Kanalı Siler Ve Tekrar Açar</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!nuke </p>
+                     
+                    </div>
+                </span>
+            </div>
+            
+            <div class="command" data-name="mod">
+                <h2>dm-hg</h2><span>
+                    <div class="cmdinfo">
+                        <p>Yazdığınız Mesajı Sunucuya Giren Üyelerin DM`sine Atar</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!dm-hg mesajınız </p>
+                     
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="mod">
+                <h2>dm-bb</h2><span>
+                    <div class="cmdinfo">
+                        <p>Yazdığınız Mesajı Sunucuya Ayrılan Üyelerin DM`sine Atar</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!dm-bb mesajınız </p>
+                     
+                    </div>
+                </span>
+            </div>
+
+            
+            <div class="command" data-name="mod">
+                <h2>rolbilgi</h2><span>
+                    <div class="cmdinfo">
+                        <p>Rol Hakkında Bilgileri Gösterir</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!rolbilgi @rol </p>
+                     
+                    </div>
+                </span>
+            </div>
+
+             
+            <div class="command" data-name="mod">
+                <h2>sesli sustur/aç</h2><span>
+                    <div class="cmdinfo">
+                        <p>Sesteki Bir Üyeyi Susturusunuz Veya Açarsınız</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!sesli sustur/aç </p>
+                     
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="mod">
+                <h2>hg-bb ayarla/sıfırla </h2><span>
+                    <div class="cmdinfo">
+                        <p>Resimli Hoşgeldi Görüşürüz  Sistemini Ayarlarsınız</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!hg-bb ayarla/sıfırla =>  z!hg-bb ayarla #kanal  </p>
+                     
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="mod">
+                <h2>banlist </h2><span>
+                    <div class="cmdinfo">
+                        <p>Sunucuda Banlanan Üyeleri Gösterir</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!banlist  </p>
+                     
+                    </div>
+                </span>
+            </div>
+            
+
+            <div class="command" data-name="mod">
+                <h2>emoji-yükle </h2><span>
+                    <div class="cmdinfo">
+                        <p>Başka Sunuculardan İstediğiniz Emojiyi Sunucuya Ekler </p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!emoji-yükle :emoji:  </p>
+                     
+                    </div>
+                </span>
+            </div>
+            
+            <div class="command" data-name="mod">
+                <h2>guild-reset </h2><span>
+                    <div class="cmdinfo">
+                        <p>Sunucuda Kanalları siler yeniden oluşturur </p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!guild-reset  </p>
+                     <p>BU KOMUT ONAYLAMA İSTEMİYOR YAZILDIĞI ANDA ÇALIŞIR</p>
+                    </div>
+                </span>
+            </div>
+
+             
+            <div class="command" data-name="mod">
+                <h2>mod-log </h2><span>
+                    <div class="cmdinfo">
+                        <p>Sunucuda Olup biten Herşeyi Kanala Atar </p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!mod-log #kanal  </p>
+                     
+                    </div>
+                </span>
+            </div>
+            
+
+           
+            
+            <div class="command" data-name="tag">
+                <h2>yasaklı-tag</h2><span>
+                    <div class="cmdinfo">
+                        <p>Belirttiğiniz Tagı Kullanan Üyeleri Önce Atar Tekrar Girmeye Çalışanları Banlar</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!yasaklı-tag ekle tag #kanal </p>
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="tag">
+                <h2>yasaklı-tag sıfırla</h2><span>
+                    <div class="cmdinfo">
+                        <p>Yasaklı Tagı Sıfırlar</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!yasaklı-tag sıfırla </p>
+                    </div>
+                </span>
+            </div>
+           
+            <div class="command" data-name="tag">
+                <h2>tag</h2><span>
+                    <div class="cmdinfo">
+                        <p>Herhangi Bir Metin Kanalına Tag ( Sadece Tag) Yazılırsa Bot Tagınızı Atar (MESAJ TAG)</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!tag TAGINIZ </p>
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="tag">
+                <h2>tag kapat</h2><span>
+                    <div class="cmdinfo">
+                        <p>Mesaj Tag Sistemini Kapatır</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!tag kapat</p>
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="tag">
+                <h2>ototag</h2><span>
+                    <div class="cmdinfo">
+                        <p>Sunucuya Girenlerin İsmine (Sunucudaki İsmine) Tagınızı Ekler</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!ototag TAG</p>
+                    </div>
+                </span>
+            </div>
+
+
+            <div class="command" data-name="kayıt">
+                <h2>kayıt kanal</h2><span>
+                    <div class="cmdinfo">
+                        <p>Sunucuda Kayıt olunacak (ve kayıt yapılacak) kanalı Belirlersiniz</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!kayıt-kanal #kanal </p>
+                    </div>
+                </span>
+            </div>
+
+            
+            <div class="command" data-name="kayıt">
+                <h2>alınacak rol</h2><span>
+                    <div class="cmdinfo">
+                        <p>Üyelerden Kayıt Olduktan Sonra Alınacak Rol Örnek => Kayıtsız</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!alınacak-rol @rol </p>
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="kayıt">
+                <h2>erkek rol</h2><span>
+                    <div class="cmdinfo">
+                        <p>Erkek Rolü Ayarlarsınız </p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!erkek-rol @rol </p>
+                    </div>
+                </span>
+            </div>
+            
+            <div class="command" data-name="kayıt">
+                <h2>kız rol</h2><span>
+                    <div class="cmdinfo">
+                        <p>Kız Rolü Ayarlarsınız </p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!kız-rol @rol </p>
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="kayıt">
+                <h2>kayıtçı rol</h2><span>
+                    <div class="cmdinfo">
+                        <p>Kayıt Edecek Yetkili Rolünü Ayarlarsınız </p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!kayıtçı-rol @rol </p>
+                    </div>
+                </span>
+            </div>
+            
+
+            <div class="command" data-name="kayıt">
+                <h2>kayıt-hg</h2><span>
+                    <div class="cmdinfo">
+                        <p>kayıt Edilecek Kanala Bildirim Atar Kayıtci Rolünü Etiketler</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!kayıt-hg #kanal </p>
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="kayıt">
+                <h2>kayıt-hg sıfırla</h2><span>
+                    <div class="cmdinfo">
+                        <p>Kayıt hg kanalını sıfırlar </p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!kayıt-hg sıfırla </p>
+                    </div>
+                </span>
+            </div>
+            
+            <div class="command" data-name="kayıt">
+                <h2>erkek kayıt</h2><span>
+                    <div class="cmdinfo">
+                        <p>Etiketlenen Üyeyi Erkek Olarak Kayderer Ve Ayarlanan Erkek Rolünü  Üyeye Verir</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!e @üye </p>
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="kayıt">
+                <h2>kız kayıt</h2><span>
+                    <div class="cmdinfo">
+                        <p>Etiketlenen Üyeyi Kız Olarak Kayderer Ve Ayarlanan Kız Rolünü  Üyeye Verir</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!k @üye </p>
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="özelk">
+                <h2>özel kanal kategori ayarlama</h2><span>
+                    <div class="cmdinfo">
+                        <p>Açılan Özel Kanalları Belirlenen Kategotitiye Taşır</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!özelkanalayarla kategori ID </p>
+                    </div>
+                </span>
+            </div>
+           
+            <div class="command" data-name="özelk">
+                <h2>özel kanal oluştur</h2><span>
+                    <div class="cmdinfo">
+                        <p>Size [Komutu Kullanan Kişiye] Özel Ses Kanalı Açar </p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!ök oluştur => Talimatları Yapınız  </p>
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="özelk">
+                <h2>özel kanal sil</h2><span>
+                    <div class="cmdinfo">
+                        <p>Açılan Özel Kanalı Siler </p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!ök sil </p>
+                    </div>
+                </span>
+            </div>
+
+            <div class="command" data-name="özelk">
+                <h2>özel kanal izin</h2><span>
+                    <div class="cmdinfo">
+                        <p>Etiketlenen Üyeye Açtığınız Özel Kanala Giriş İzni Verirsiniz (izni Silmek İçin Komutu tekrar Kullanın) </p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!ök izin @üye </p>
+                    
+                    </div>
+                </span>
+            </div>
+
+        
+        
+            <div class="command" data-name="kelimeo">
+                <h2>kelime kanal</h2><span>
+                    <div class="cmdinfo">
+                        <p>Kelime Oyununun Hangi Kanalda Oynanacağını Belirlersizin </p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!kelime kanal #kanal </p>
+                    </div>
+                </span>
+            </div>
+
+
+            <div class="command" data-name="kelimeo">
+                <h2>kelime başlat</h2><span>
+                    <div class="cmdinfo">
+                        <p>Kelime Oyununun Başlatır </p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!kelime başlat </p>
+                    </div>
+                </span>
+            </div>
+        
+            <div class="command" data-name="kelimeo">
+                <h2>kelime sıfırla</h2><span>
+                    <div class="cmdinfo">
+                        <p>Kelime Oyununun Sıfırlar Ve Rastgele Kelime Verir </p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Kullanım: z!kelime sıfırla  </p>
+                    </div>
+                </span>
+            </div>
+        
+        
+        
+        </div>
+    </div>
+   
+    <div class="faq">
+        <div class="curve">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill-opacity="1" id="faq"
+                    d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+        <div class="wrapper reveal">
+            <main id="questions" role="main">
+                <div class="title">
+                    <div class="th1">
+                        <h1>S.S.S (Sıkça Sorulan Sorular)</h1>
+                    </div>
+                    <center>
+                        <div class="thr">
+                            <hr>
+                        </div>
+                    </center>
+                </div>
+                <input type="text" class="live-search-box" placeholder="Sorulardan Arayın..." />
+                
+                <div class="topic">
+                    <div class="open">
+
+                        <h2 class="question">1.Yasaklı Tag Sistemine Kaç Tag Ekleyebilirim</h2>
+                        <span class="faq-t"></span>
+                    </div>
+                    <p class="answer">Şuanlık Bir Tag Eklenebiliyor İleride Sevilirse Arttırmayı Düşünüyoruz.</p>
+                </div>
+
+                <div class="topic">
+                <div class="open">
+
+                    <h2 class="question">2.Nereden Oy Verebilirim</h2>
+                    <span class="faq-t"></span>
+                </div>
+                <p class="answer">Top.gg Adresine gidip arama yerine ZyraBOT yazıp verebilirsiniz.</p>
+            </div>
+
+
+            <div class="topic">
+                <div class="open">
+
+                    <h2 class="question">3.ZyraBOT`ta Neden Oy Şartı Yok</h2>
+                    <span class="faq-t"></span>
+                </div>
+                <p class="answer">Kullanıcılarımıza Hızlı bir şekilde Hizmet Vermek İçin Oy Şartı Koymadık.</p>
+            </div>
+
+            <div class="topic">
+                <div class="open">
+
+                    <h2 class="question">4.Guild Reset Komutu Kanallar daki Mesajlar Siliniyor mu</h2>
+                    <span class="faq-t"></span>
+                </div>
+                <p class="answer">Evet Kanallardaki Mesajları Siler.</p>
+            </div>
+
+
+            <div class="topic">
+                <div class="open">
+
+                    <h2 class="question">5.Özel Kanalımı Sildim Ama Hareketsizlik Sebebiyle Silindi Diyor</h2>
+                    <span class="faq-t"></span>
+                </div>
+                <p class="answer">ZyraBOT Kanal İD`sini DataBasede Tutar. (Kanal açmak İsterseniz Sizlerin Açılan Eski Kanalları Açma Seçeneği Sunar)</p>
+            </div>
+
+               
+            </main>
+        </div>
+        <div class="curve">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill-opacity="1"
+                    d="M0,32L48,80C96,128,192,224,288,218.7C384,213,480,107,576,96C672,85,768,171,864,176C960,181,1056,107,1152,64C1248,21,1344,11,1392,5.3L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+            </svg>
+        </div>
+    </div>
+    
+    <div class="curve">
+        <svg xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill-opacity="1"
+                d="M0,192L48,176C96,160,192,128,288,133.3C384,139,480,181,576,202.7C672,224,768,224,864,224C960,224,1056,224,1152,234.7C1248,245,1344,267,1392,277.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+
+    
+    <div id="support"></div>
+    
+    <div class="wrapper reveal">
+        <div class="title">
+            <div class="th1">
+                <h1>ZyraBOT | Bir Bottan Daha Fazlası</h1>
+            </div>
+            <center>
+                <div class="thr">
+                    <hr>
+                </div>
+            </center>
+        </div>
+      
+        
+    </div>
+    
+    <div class="topic">
+        <div class="open">
+
+            <h2 class="question">Nasıl Destek Olabilirim</h2>
+            <span class="faq-t"></span>
+        </div>
+        <p class="answer">Geliştirici İle DM`den konulabilirsiniz</p>
+    </div>
+       
+        
+    </div>
+    
+    
+    <footer>
+
+        <div class="wrapper">
+            <div class="foot">
+                <h1>ZyraBOT</h1>
+                <nav>
+                    <ul class="nav-area bottom-nav">
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        
+                    </ul>
+                </nav>
+                <h4> © Copyright ZyraBOT Site Developer & ZyraBOT Owner ve Geliştiricisi => ! Piarshieee ✯ L#3969</a></h4>
+              
+            </div>
+        </div>
+    </footer>
+   
+    <script src="src/js/main.js"></script>
+    <script src="src/js/komutlar.js"></script>
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js">   </script>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</body>
+
+
+</html>
